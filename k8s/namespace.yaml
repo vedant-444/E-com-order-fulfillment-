@@ -1,0 +1,7 @@
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: orderflow360-analytics
+  labels:
+    environment: production
+    app: orderflow360

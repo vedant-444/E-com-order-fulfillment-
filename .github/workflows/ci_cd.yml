@@ -1,0 +1,52 @@
+name: OrderFlow360 CI/CD Pipeline
+
+on:
+  push:
+    branches: [ "main", "develop" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  test-and-validate:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python 3.11
+      uses: actions/setup-python@v5
+      with:
+        python-version: "3.11"
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Run Automated Test Suite (13 Tests)
+      run: |
+        python run_tests.py
+
+    - name: Execute Full ETL Pipeline & Validate Warehouse
+      run: |
+        python src/etl/pipeline.py
+
+    - name: Upload Profiling and Reconciliation Artifacts
+      uses: actions/upload-artifact@v4
+      with:
+        name: data-quality-reports
+        path: reports/
+
+  build-and-package:
+    needs: test-and-validate
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Docker Buildx
+      uses: actions/setup-buildx-action@v3
+
+    - name: Build Docker Image
+      run: |
+        docker build -f docker/Dockerfile -t orderflow360/analytics-platform:${{ github.sha }} .

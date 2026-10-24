@@ -1,0 +1,10 @@
+COURIER_ID,COURIER_NAME,SLA_DAYS,SERVICE_TYPE,REGION_COVERAGE,ACTIVE_FLAG
+CR01,Delhivery,4,Surface,Pan-India,Y
+CR02,Blue Dart,2,Air Express,Pan-India,Y
+CR03,DTDC,5,Surface,Pan-India,Y
+CR04,Ecom Express,4,Surface,Pan-India,Y
+CR05,XpressBees,5,Surface,Pan-India,Y
+CR06,Shadowfax,3,Hyperlocal,Metro,Y
+CR07,India Post,7,Postal,Pan-India,Y
+CR08,Ekart,4,Surface,Pan-India,Y
+CR09,Gati,6,Surface,Pan-India,N

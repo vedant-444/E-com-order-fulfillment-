@@ -1,0 +1,41 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "ETL: Run Pipeline",
+            "type": "shell",
+            "command": "& 'C:\\Users\\vedan\\AppData\\Local\\Python\\bin\\python.exe' src/etl/pipeline.py",
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "App: Start Web Dashboard",
+            "type": "shell",
+            "command": "& 'C:\\Users\\vedan\\AppData\\Local\\Python\\bin\\python.exe' app/server.py",
+            "group": "none",
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        },
+        {
+            "label": "Test: Run All Tests",
+            "type": "shell",
+            "command": "& 'C:\\Users\\vedan\\AppData\\Local\\Python\\bin\\python.exe' run_tests.py",
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            },
+            "presentation": {
+                "reveal": "always",
+                "panel": "new"
+            }
+        }
+    ]
+}

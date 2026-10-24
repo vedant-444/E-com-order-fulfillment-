@@ -1,0 +1,17 @@
+{
+    "python.defaultInterpreterPath": "C:\\Users\\vedan\\AppData\\Local\\Python\\bin\\python.exe",
+    "python.analysis.extraPaths": [
+        "${workspaceFolder}"
+    ],
+    "files.exclude": {
+        "**/__pycache__": true,
+        "**/.pytest_cache": true
+    },
+    "sqltools.connections": [
+        {
+            "name": "OrderFlow360 Data Warehouse",
+            "dialect": "SQLite",
+            "database": "${workspaceFolder}/data/warehouse/orderflow360_warehouse.db"
+        }
+    ]
+}

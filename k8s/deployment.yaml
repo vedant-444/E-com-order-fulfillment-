@@ -1,0 +1,51 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: orderflow360-web-deployment
+  namespace: orderflow360-analytics
+  labels:
+    app: orderflow360-web
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: orderflow360-web
+  strategy:
+    type: RollingUpdate
+    rollingUpdate:
+      maxSurge: 1
+      maxUnavailable: 0
+  template:
+    metadata:
+      labels:
+        app: orderflow360-web
+    spec:
+      containers:
+      - name: orderflow360-analytics
+        image: orderflow360/analytics-platform:v1.0.0
+        imagePullPolicy: IfNotPresent
+        ports:
+        - containerPort: 5000
+          name: http
+        envFrom:
+        - configMapRef:
+            name: orderflow360-config
+        resources:
+          requests:
+            cpu: "250m"
+            memory: "512Mi"
+          limits:
+            cpu: "1000m"
+            memory: "1Gi"
+        livenessProbe:
+          httpGet:
+            path: /api/kpis
+            port: 5000
+          initialDelaySeconds: 15
+          periodSeconds: 20
+        readinessProbe:
+          httpGet:
+            path: /api/kpis
+            port: 5000
+          initialDelaySeconds: 5
+          periodSeconds: 10

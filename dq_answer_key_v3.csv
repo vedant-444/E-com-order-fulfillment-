@@ -1,0 +1,973 @@
+FILE,RECORD_KEY,INJECTED_ISSUE,EXPECTED_ACTION
+customer_master_orders_v3.csv,C10299,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10274,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10405,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10278,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10456,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10372,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10534,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10462,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10424,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10172,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10189,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10024,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10129,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10241,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10258,NULL_CUSTOMER_NAME,REJECT_OR_FLAG (mandatory field)
+customer_master_orders_v3.csv,C10082,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10216,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10171,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10407,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10106,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10098,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10066,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10485,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10562,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10056,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10027,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10537,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10086,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10107,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10269,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10160,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10087,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10400,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10317,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10235,NULL_CITY,DEFAULT 'UNKNOWN' + flag
+customer_master_orders_v3.csv,C10254,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10291,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10454,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10130,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10135,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10540,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10175,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10030,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10036,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10366,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10334,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10488,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10479,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10554,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10279,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10562,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10456,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10139,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10553,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10182,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10468,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10578,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10446,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10537,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10547,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10318,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10356,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10494,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10233,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10092,NULL_EMAIL,LOAD (optional field)
+customer_master_orders_v3.csv,C10453,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10316,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10375,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10423,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10267,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10160,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10311,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10011,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10001,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10536,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10140,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10353,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10294,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10481,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10548,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10009,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10504,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10489,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10307,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10010,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10441,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10300,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10237,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10008,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10562,NULL_PHONE,LOAD (optional field)
+customer_master_orders_v3.csv,C10383,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10194,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10422,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10575,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10448,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10405,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10256,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10168,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10400,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10388,INVALID_EMAIL,FLAG / null out
+customer_master_orders_v3.csv,C10226,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10270,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10082,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10433,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10246,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10530,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10279,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10292,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10545,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10276,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10423,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10193,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10071,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10187,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10140,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10297,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10114,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10467,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10464,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10504,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10329,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10020,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10156,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10051,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10548,CITY_CASE_WHITESPACE,"STANDARDIZE (trim, title-case)"
+customer_master_orders_v3.csv,C10557,CITY_ALIAS,STANDARDIZE via mapping
+customer_master_orders_v3.csv,C10391,CITY_ALIAS,STANDARDIZE via mapping
+customer_master_orders_v3.csv,C10395,CITY_ALIAS,STANDARDIZE via mapping
+customer_master_orders_v3.csv,C10534,CITY_ALIAS,STANDARDIZE via mapping
+customer_master_orders_v3.csv,C10044,CITY_ALIAS,STANDARDIZE via mapping
+customer_master_orders_v3.csv,C10563,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10534,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10126,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10260,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10493,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10306,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10204,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10370,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10054,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10224,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10116,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10242,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10445,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10333,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10016,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10172,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10283,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10599,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10123,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10406,SEGMENT_CASE,STANDARDIZE
+customer_master_orders_v3.csv,C10249,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10010,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10044,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10596,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10487,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10159,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10381,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10092,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10255,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10162,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10512,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10094,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10347,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10062,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10365,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10158,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10550,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10110,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10129,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10500,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10239,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10325,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10572,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10356,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10450,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10198,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10022,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10387,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10367,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10138,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10257,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10041,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10497,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10449,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10573,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10302,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10556,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10502,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10195,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10581,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10192,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10557,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10357,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10332,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10480,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10282,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10568,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10165,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10071,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10544,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10461,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10303,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10270,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10555,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10376,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10465,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10001,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10519,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10389,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10190,ADDRESS_CHANGE_NEW_VERSION,"SCD2: close old row, insert new current row"
+customer_master_orders_v3.csv,C10233,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10428,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10247,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10587,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10157,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10437,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10320,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10338,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10460,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10556,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10135,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10212,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10142,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10595,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10555,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10208,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10317,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10537,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10139,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10441,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10149,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10579,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10162,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10326,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10070,SEGMENT_CHANGE_NEW_VERSION,SCD1 overwrite (or SCD2 if you choose)
+customer_master_orders_v3.csv,C10041,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10572,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10397,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10529,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10282,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10051,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10195,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10299,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10451,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,C10408,EXACT_DUPLICATE_ROW,DEDUP
+customer_master_orders_v3.csv,(null id) Ananya Chauhan,NULL_CUSTOMER_ID,REJECT
+customer_master_orders_v3.csv,(null id) Aarav Mehta,NULL_CUSTOMER_ID,REJECT
+customer_master_orders_v3.csv,(null id) Arjun Das,NULL_CUSTOMER_ID,REJECT
+customer_master_orders_v3.csv,(null id) Siddharth Agarwal,NULL_CUSTOMER_ID,REJECT
+customer_master_orders_v3.csv,(null id) Kabir Patel,NULL_CUSTOMER_ID,REJECT
+customer_master_orders_v3.csv,(null id) Nikhil Gupta,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201405,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200107,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200262,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201473,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201208,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201487,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200239,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200411,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201288,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200727,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201143,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200527,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200011,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200472,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200086,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200761,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200104,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200685,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201413,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200971,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200823,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200372,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200157,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200611,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200597,NULL_CUSTOMER_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201043,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201217,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200077,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200666,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200830,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200396,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201268,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201329,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200281,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200645,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200811,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200494,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200350,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200150,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200277,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200030,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200927,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200829,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD201278,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200738,NULL_PRODUCT_ID,REJECT
+order_transactions_dirty_v3.csv,ORD200544,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200873,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200535,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200229,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200594,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200600,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200751,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201198,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200102,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201062,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201267,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201397,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200320,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200791,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201340,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201132,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201448,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200767,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD200789,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201091,ORPHAN_CUSTOMER_FK,REJECT/QUARANTINE (or load to 'Unknown' member - document it)
+order_transactions_dirty_v3.csv,ORD201081,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200328,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200981,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200034,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201191,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200051,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201137,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200883,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200040,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200709,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200145,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200640,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200158,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201047,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200339,PLAIN_TEXT_ORDER_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200441,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200315,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200541,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200359,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200285,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201261,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200552,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200949,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200422,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200964,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200646,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201367,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200963,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200837,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201361,PLAIN_TEXT_DELIVERY_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200537,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200109,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200202,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201172,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200491,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200930,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200478,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200076,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200984,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201324,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200792,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200453,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200917,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200559,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200875,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200649,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200291,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200333,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200144,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200909,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201129,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200872,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200569,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200722,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD200276,INVALID_CALENDAR_DATE,REJECT/QUARANTINE
+order_transactions_dirty_v3.csv,ORD201259,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201272,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201152,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201036,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200702,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200659,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200664,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200679,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200822,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201410,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201099,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201356,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200352,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201034,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200621,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200773,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201369,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200062,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200380,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201292,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200506,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200533,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200591,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200699,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200878,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200958,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200358,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200851,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200129,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200173,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200948,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201003,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200733,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200772,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200814,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200121,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200804,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201419,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200488,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201297,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200449,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200999,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200987,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201242,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200432,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200268,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201454,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200978,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200379,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201325,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200689,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200429,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200036,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200419,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200914,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201177,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200462,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200473,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200831,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201189,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200007,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200894,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200497,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200267,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200682,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200171,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201462,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201262,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201420,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200931,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201441,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200045,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200746,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200391,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200222,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200154,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200071,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200057,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200614,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200891,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200704,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200967,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201000,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201273,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201327,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200728,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200861,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201417,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201052,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201002,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200205,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200750,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200234,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200209,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200812,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201012,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201042,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200572,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201236,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200418,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201435,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200266,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201392,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201373,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200489,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200758,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200663,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200897,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200913,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200977,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200288,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201135,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200586,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200511,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201495,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201279,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201170,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201422,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD201181,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200834,MIXED_DATE_FORMAT,FIX: parse multiple formats then load
+order_transactions_dirty_v3.csv,ORD200969,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201444,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200324,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200206,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200940,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200703,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200223,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201101,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200179,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200942,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201339,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201414,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200994,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200518,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200364,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200387,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200303,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201141,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201336,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200269,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200687,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201246,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201054,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201452,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD200211,NEGATIVE_QUANTITY,REJECT (or treat as return - document)
+order_transactions_dirty_v3.csv,ORD201240,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD201303,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200741,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200668,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200638,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD201146,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200705,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200620,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200084,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200177,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200050,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200242,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200911,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200719,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200125,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200660,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD201094,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD201185,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200092,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD201400,ZERO_QUANTITY,REJECT/QUARANTINE (document rule)
+order_transactions_dirty_v3.csv,ORD200827,NON_NUMERIC_QUANTITY,REJECT
+order_transactions_dirty_v3.csv,ORD201133,NON_NUMERIC_QUANTITY,REJECT
+order_transactions_dirty_v3.csv,ORD200540,NON_NUMERIC_QUANTITY,REJECT
+order_transactions_dirty_v3.csv,ORD201231,NON_NUMERIC_QUANTITY,REJECT
+order_transactions_dirty_v3.csv,ORD200142,NON_NUMERIC_QUANTITY,REJECT
+order_transactions_dirty_v3.csv,ORD201216,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200906,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200606,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200013,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD201238,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD201111,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD201082,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200989,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200097,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200190,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200210,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD201080,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200824,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200536,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200783,NULL_UNIT_PRICE,FLAG; derive from product dim if available
+order_transactions_dirty_v3.csv,ORD200807,ZERO_UNIT_PRICE,FLAG
+order_transactions_dirty_v3.csv,ORD200596,ZERO_UNIT_PRICE,FLAG
+order_transactions_dirty_v3.csv,ORD201029,ZERO_UNIT_PRICE,FLAG
+order_transactions_dirty_v3.csv,ORD201104,ZERO_UNIT_PRICE,FLAG
+order_transactions_dirty_v3.csv,ORD201183,ZERO_UNIT_PRICE,FLAG
+order_transactions_dirty_v3.csv,ORD201371,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200794,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200903,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201005,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201429,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200926,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201041,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200195,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201476,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200937,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200200,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201281,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201228,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200857,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200463,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201226,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201489,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200720,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200122,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201488,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200293,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200474,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200088,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200849,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200302,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201274,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200589,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201434,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200078,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD200516,DELIVERY_BEFORE_SHIPPED,REJECT
+order_transactions_dirty_v3.csv,ORD201314,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200143,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200275,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200880,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD201437,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200725,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD201304,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200524,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200548,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200908,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200054,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200632,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200676,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200117,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200426,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200581,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD201451,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200766,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200895,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD201115,DELIVERY_BEFORE_ORDER,REJECT
+order_transactions_dirty_v3.csv,ORD200745,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201019,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200124,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200583,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200373,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200850,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200938,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200002,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201140,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201321,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201427,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201433,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200508,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201346,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD200550,SHIPPED_BEFORE_ORDER,REJECT (extra chronology rule)
+order_transactions_dirty_v3.csv,ORD201134,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200073,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200058,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200133,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200443,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200561,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201121,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200501,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200565,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200731,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201033,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200356,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201086,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200189,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200256,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201070,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201460,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200595,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201497,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200194,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200846,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200953,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201456,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200564,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD200110,UNKNOWN_COURIER,REJECT (not in SLA master)
+order_transactions_dirty_v3.csv,ORD201126,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200486,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201223,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200986,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200522,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201352,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201284,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201387,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201159,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200707,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201481,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200414,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200608,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD201271,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200413,NULL_COURIER,REJECT (or allow for Cancelled - document)
+order_transactions_dirty_v3.csv,ORD200801,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200225,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200993,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200238,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200248,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD201312,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200657,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200637,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200898,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD201233,INACTIVE_COURIER,"BUSINESS RULE: exists in master -> load, flag inactive"
+order_transactions_dirty_v3.csv,ORD200542,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201399,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200323,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200287,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201119,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201269,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200863,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200233,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200208,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200407,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200451,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200389,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200012,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200091,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201222,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200026,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201255,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201260,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200286,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200604,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200390,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201060,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201334,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200998,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200736,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200165,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200673,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200306,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200716,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200859,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200176,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201436,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201348,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201090,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201266,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200470,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200466,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200207,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201024,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200588,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201058,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201490,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200138,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200929,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200025,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201370,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200601,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200279,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200457,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200560,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200575,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200448,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200139,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201107,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201354,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200067,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201475,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200743,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200916,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200346,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200329,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201148,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201221,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200776,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200010,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200409,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201049,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200972,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200297,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200027,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200939,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200119,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201073,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200442,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200865,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200482,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200777,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200988,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200495,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD201439,COURIER_NAME_VARIANT,STANDARDIZE via mapping table
+order_transactions_dirty_v3.csv,ORD200997,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200555,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200510,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200754,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200064,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200717,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200904,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200740,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200377,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200214,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201025,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201474,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201467,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200547,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201114,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200712,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201374,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200922,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200688,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200454,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200983,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200616,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200321,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200245,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200123,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200512,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201388,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200162,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200424,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200094,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200056,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200421,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200420,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201403,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201251,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200305,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200095,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201219,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200217,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200498,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200096,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200468,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200726,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200826,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200343,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201059,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200935,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200075,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200417,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201326,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200946,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201192,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200101,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201118,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200980,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201345,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200697,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD201095,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200228,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200605,STATUS_VARIANT,STANDARDIZE to 4 canonical statuses
+order_transactions_dirty_v3.csv,ORD200203,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200781,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201328,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200035,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201423,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200274,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200180,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201084,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200690,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200920,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200968,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201458,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200271,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201227,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201180,DELIVERED_WITHOUT_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201316,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200341,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201376,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201093,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200681,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200355,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200292,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD200113,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201055,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201032,IN_TRANSIT_WITH_DELIVERY_DATE,REJECT/QUARANTINE (status vs date conflict)
+order_transactions_dirty_v3.csv,ORD201074,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201144,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200755,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200765,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201163,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200661,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201463,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200493,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201265,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200918,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200925,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201412,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200585,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200249,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200008,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200558,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200788,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201250,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD201108,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200723,TRAILING_WHITESPACE_ID,STANDARDIZE (trim)
+order_transactions_dirty_v3.csv,ORD200578,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200799,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200374,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200168,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200153,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD201218,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD201187,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200905,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200152,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200636,LOWERCASE_PRODUCT_ID,STANDARDIZE (upper)
+order_transactions_dirty_v3.csv,ORD200820,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201252,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200001,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200991,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201378,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200944,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200795,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200335,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200619,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201379,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200186,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200889,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201461,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200680,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201176,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200499,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200960,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201053,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200232,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201021,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201347,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200191,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201066,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200803,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200769,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201341,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201295,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200369,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201391,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201366,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200757,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201362,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201353,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200858,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200055,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200311,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200785,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200041,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD201381,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200655,EXACT_DUPLICATE_ROW,DEDUP
+order_transactions_dirty_v3.csv,ORD200146,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201065,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201430,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200549,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200602,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200004,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201335,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201232,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200545,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200818,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200784,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200255,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200016,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200395,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201447,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200394,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201194,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200532,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200556,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200956,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201360,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200483,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201157,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201220,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201061,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD201117,CDC_STATUS_UPDATE_SAME_ID,KEEP LATEST by LAST_UPDATED_TS (CDC upsert)
+order_transactions_dirty_v3.csv,ORD200100,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201145,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201168,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD200492,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201479,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201102,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201001,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201465,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD200590,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD201289,CONFLICTING_DUPLICATE_SAME_TS,QUARANTINE - cannot decide winner; document assumption
+order_transactions_dirty_v3.csv,ORD101735,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102491,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102678,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100605,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101947,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100356,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100877,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101190,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101046,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101570,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100141,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102120,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102161,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101078,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100971,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100840,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100729,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100606,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100351,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD100537,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101085,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102926,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102293,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD101209,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)
+order_transactions_dirty_v3.csv,ORD102121,CROSS_FILE_CDC_UPDATE,UPSERT over clean-file version (newer LAST_UPDATED_TS)

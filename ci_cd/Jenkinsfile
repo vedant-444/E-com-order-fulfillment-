@@ -1,0 +1,83 @@
+// Jenkins CI/CD Pipeline for OrderFlow360 Analytics Platform
+// Complies with NIT Assessment Architecture (GitFlow -> Lint -> Unit Tests -> Docker -> K8s)
+
+pipeline {
+    agent any
+
+    environment {
+        APP_NAME = 'orderflow360-analytics'
+        DOCKER_REGISTRY = 'registry.hub.docker.com/orderflow360'
+        IMAGE_TAG = "${env.BUILD_NUMBER}"
+        KUBECONFIG_CREDENTIAL_ID = 'k8s-prod-cluster-config'
+    }
+
+    stages {
+        stage('01. Source Checkout') {
+            steps {
+                echo 'Checking out source repository from GitHub...'
+                checkout scm
+            }
+        }
+
+        stage('02. Code Quality & Lint') {
+            steps {
+                echo 'Running Flake8 linting and type checks...'
+                sh '''
+                    python3 -m pip install flake8
+                    flake8 src/ --count --select=E9,F63,F7,F82 --show-source --statistics
+                '''
+            }
+        }
+
+        stage('03. Unit & DQ Automated Tests') {
+            steps {
+                echo 'Executing 13 unit tests & Data Quality rule verifications...'
+                sh '''
+                    python3 run_tests.py
+                '''
+            }
+        }
+
+        stage('04. Docker Container Build') {
+            steps {
+                echo "Building Docker container image: ${DOCKER_REGISTRY}:${IMAGE_TAG}..."
+                sh """
+                    docker build -f docker/Dockerfile -t ${DOCKER_REGISTRY}:${IMAGE_TAG} .
+                    docker tag ${DOCKER_REGISTRY}:${IMAGE_TAG} ${DOCKER_REGISTRY}:latest
+                """
+            }
+        }
+
+        stage('05. Container Security Scan') {
+            steps {
+                echo 'Running Trivy container vulnerability scan...'
+                sh """
+                    docker run --rm -v /var/run/docker.sock:/var/run/docker.sock aquasec/trivy:latest image --severity HIGH,CRITICAL --exit-code 0 ${DOCKER_REGISTRY}:${IMAGE_TAG}
+                """
+            }
+        }
+
+        stage('06. Deploy to Kubernetes (EKS/AKS/GKE)') {
+            steps {
+                echo 'Deploying to Kubernetes cluster namespace orderflow360-analytics...'
+                sh '''
+                    kubectl apply -f k8s/namespace.yaml
+                    kubectl apply -f k8s/configmap.yaml
+                    kubectl apply -f k8s/deployment.yaml
+                    kubectl apply -f k8s/service.yaml
+                    kubectl apply -f k8s/ingress.yaml
+                    kubectl rollout status deployment/orderflow360-web-deployment -n orderflow360-analytics --timeout=120s
+                '''
+            }
+        }
+    }
+
+    post {
+        success {
+            echo "CI/CD Pipeline Succeeded! OrderFlow360 Analytics Platform is LIVE."
+        }
+        failure {
+            echo "CI/CD Pipeline Failed. Notification sent to DevOps & Data Engineering team."
+        }
+    }
+}

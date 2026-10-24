@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: orderflow360-service
+  namespace: orderflow360-analytics
+  labels:
+    app: orderflow360-web
+spec:
+  type: ClusterIP
+  ports:
+  - port: 80
+    targetPort: 5000
+    protocol: TCP
+    name: http
+  selector:
+    app: orderflow360-web

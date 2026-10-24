@@ -1,0 +1,76 @@
+version: '3.8'
+
+services:
+  # OrderFlow360 Interactive Analytics Web MVP
+  orderflow-web:
+    build:
+      context: ..
+      dockerfile: docker/Dockerfile
+    container_name: orderflow360-web-mvp
+    ports:
+      - "5000:5000"
+    environment:
+      - PORT=5000
+      - DATABASE_URL=sqlite:////app/data/warehouse/orderflow360_warehouse.db
+    volumes:
+      - ../data:/app/data
+      - ../reports:/app/reports
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:5000/api/kpis"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  # PostgreSQL for Airflow Metadata & Cloud Warehouse Simulation
+  postgres:
+    image: postgres:15-alpine
+    container_name: orderflow360-postgres
+    environment:
+      - POSTGRES_USER=airflow
+      - POSTGRES_PASSWORD=airflow
+      - POSTGRES_DB=airflow
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    restart: unless-stopped
+
+  # Apache Airflow Webserver
+  airflow-webserver:
+    image: apache/airflow:2.8.1-python3.11
+    container_name: orderflow360-airflow-webserver
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ../dags:/opt/airflow/dags
+      - ../src:/opt/airflow/src
+      - ../data:/opt/airflow/data
+    ports:
+      - "8080:8080"
+    command: webserver
+
+  # Apache Airflow Scheduler
+  airflow-scheduler:
+    image: apache/airflow:2.8.1-python3.11
+    container_name: orderflow360-airflow-scheduler
+    restart: always
+    depends_on:
+      - postgres
+    environment:
+      - AIRFLOW__CORE__EXECUTOR=LocalExecutor
+      - AIRFLOW__CORE__SQL_ALCHEMY_CONN=postgresql+psycopg2://airflow:airflow@postgres/airflow
+      - AIRFLOW__CORE__LOAD_EXAMPLES=False
+    volumes:
+      - ../dags:/opt/airflow/dags
+      - ../src:/opt/airflow/src
+      - ../data:/opt/airflow/data
+    command: scheduler
+
+volumes:
+  postgres-data:
