@@ -56,89 +56,76 @@ flowchart TD
 
 ## 2. Dimensional Data Model (Star Schema)
 
-The curated warehouse is modeled as a star schema optimized for fulfillment queries:
+The curated warehouse is modeled as a star schema conformed around the central fulfillment fact table:
 
 ```mermaid
-erDiagram
-    DIM_CUSTOMER ||--o{ FACT_ORDER_FULFILLMENT : places
-    DIM_COURIER ||--o{ FACT_ORDER_FULFILLMENT : ships
-    DIM_PRODUCT ||--o{ FACT_ORDER_FULFILLMENT : contains
-    DIM_DATE ||--o{ FACT_ORDER_FULFILLMENT : dates
+flowchart TD
+    subgraph DimCust["DIM_CUSTOMER (SCD Type 2)"]
+        C1["CUSTOMER_KEY (PK)
+        CUSTOMER_ID (Natural Key)
+        CUSTOMER_NAME, EMAIL, PHONE
+        CITY, STATE, PINCODE
+        CUSTOMER_SEGMENT
+        START_DATE, END_DATE
+        IS_CURRENT, VERSION"]
+    end
 
-    DIM_CUSTOMER {
-        int CUSTOMER_KEY PK
-        string CUSTOMER_ID NK
-        string CUSTOMER_NAME
-        string EMAIL
-        string PHONE
-        string CITY
-        string STATE
-        string PINCODE
-        string CUSTOMER_SEGMENT
-        datetime START_DATE
-        datetime END_DATE
-        int IS_CURRENT
-        int VERSION
-    }
+    subgraph DimCourier["DIM_COURIER"]
+        CR1["COURIER_KEY (PK)
+        COURIER_ID, COURIER_NAME
+        SLA_DAYS
+        SERVICE_TYPE
+        REGION_COVERAGE
+        ACTIVE_FLAG"]
+    end
 
-    DIM_COURIER {
-        int COURIER_KEY PK
-        string COURIER_ID NK
-        string COURIER_NAME
-        int SLA_DAYS
-        string SERVICE_TYPE
-        string REGION_COVERAGE
-        string ACTIVE_FLAG
-    }
+    subgraph FactOrder["FACT_ORDER_FULFILLMENT"]
+        F1["ORDER_ID (Primary Key)
+        CUSTOMER_KEY (FK)
+        COURIER_KEY (FK)
+        PRODUCT_KEY (FK)
+        ORDER_DATE_KEY (FK)
+        SHIPPED_DATE_KEY (FK)
+        DELIVERY_DATE_KEY (FK)
+        ORDER_DATE, SHIPPED_DATE, DELIVERY_DATE
+        ORDER_STATUS, PAYMENT_MODE
+        QUANTITY, UNIT_PRICE, TOTAL_AMOUNT
+        DELIVERY_DAYS, DELAY_DAYS, SLA_DAYS
+        DELIVERED_FLAG, ON_TIME_FLAG, LATE_DELIVERY_FLAG
+        CANCELLED_FLAG, RETURNED_FLAG, IN_TRANSIT_FLAG
+        INACTIVE_COURIER_FLAG"]
+    end
 
-    DIM_PRODUCT {
-        int PRODUCT_KEY PK
-        string PRODUCT_ID NK
-        string PRODUCT_NAME
-        string CATEGORY
-        float BASE_UNIT_PRICE
-    }
+    subgraph DimProd["DIM_PRODUCT"]
+        P1["PRODUCT_KEY (PK)
+        PRODUCT_ID, PRODUCT_NAME
+        CATEGORY
+        BASE_UNIT_PRICE"]
+    end
 
-    DIM_DATE {
-        int DATE_KEY PK
-        date FULL_DATE
-        int DAY
-        int MONTH
-        string MONTH_NAME
-        int QUARTER
-        int YEAR
-        string DAY_OF_WEEK
-        int IS_WEEKEND
-    }
+    subgraph DimDate["DIM_DATE"]
+        D1["DATE_KEY (PK)
+        FULL_DATE
+        DAY, MONTH, MONTH_NAME
+        QUARTER, YEAR
+        DAY_OF_WEEK, IS_WEEKEND"]
+    end
 
-    FACT_ORDER_FULFILLMENT {
-        string ORDER_ID PK
-        int CUSTOMER_KEY FK
-        int COURIER_KEY FK
-        int PRODUCT_KEY FK
-        int ORDER_DATE_KEY FK
-        int SHIPPED_DATE_KEY FK
-        int DELIVERY_DATE_KEY FK
-        date ORDER_DATE
-        date SHIPPED_DATE
-        date DELIVERY_DATE
-        string ORDER_STATUS
-        string PAYMENT_MODE
-        int QUANTITY
-        float UNIT_PRICE
-        float TOTAL_AMOUNT
-        int DELIVERY_DAYS
-        int DELAY_DAYS
-        int SLA_DAYS
-        int DELIVERED_FLAG
-        int ON_TIME_FLAG
-        int LATE_DELIVERY_FLAG
-        int CANCELLED_FLAG
-        int RETURNED_FLAG
-        int IN_TRANSIT_FLAG
-        int INACTIVE_COURIER_FLAG
-    }
+    DimCust -->|1:N (Places)| FactOrder
+    DimCourier -->|1:N (Delivers)| FactOrder
+    DimProd -->|1:N (Contains)| FactOrder
+    DimDate -->|1:N (Timelines)| FactOrder
 ```
+
+### Warehouse Table Schemas & Grain
+
+| Table Name | Grain | Type | Key Attributes |
+|---|---|---|---|
+| **`DIM_CUSTOMER`** | 1 row per customer address version | Dimension (SCD2) | `CUSTOMER_KEY` (Surrogate PK), `CUSTOMER_ID`, `CITY`, `STATE`, `START_DATE`, `END_DATE`, `IS_CURRENT` |
+| **`DIM_COURIER`** | 1 row per courier partner | Dimension | `COURIER_KEY` (Surrogate PK), `COURIER_NAME`, `SLA_DAYS`, `SERVICE_TYPE`, `ACTIVE_FLAG` |
+| **`DIM_PRODUCT`** | 1 row per product SKU | Dimension | `PRODUCT_KEY` (Surrogate PK), `PRODUCT_ID`, `PRODUCT_NAME`, `CATEGORY`, `BASE_UNIT_PRICE` |
+| **`DIM_DATE`** | 1 row per calendar day | Dimension | `DATE_KEY` (Integer YYYYMMDD), `FULL_DATE`, `MONTH`, `QUARTER`, `YEAR`, `IS_WEEKEND` |
+| **`FACT_ORDER_FULFILLMENT`** | 1 row per Order ID | Fact Table | `ORDER_ID` (PK), Dimension FKs, `QUANTITY`, `DELIVERY_DAYS`, `DELAY_DAYS`, `SLA Flags` |
 
 ---
 
