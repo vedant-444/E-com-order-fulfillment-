@@ -176,25 +176,73 @@ The platform evaluates incoming data against **38 discrete quality rules**, matc
 
 ---
 
-## 4. Key Performance Indicators (Warehouse Results)
+## 4. Key Performance Indicators & Strategic Business Framework
 
-From the net 4,190 orders loaded to `FACT_ORDER_FULFILLMENT`:
+The analytics platform delivers on all 5 assessment KPI dimensions (**Sections A through E**):
 
-| KPI Name | Formula / Query | Value |
-|---|---|---|
-| **Total Orders** | `COUNT(*)` | **4,190** |
-| **Delivered Orders** | `SUM(DELIVERED_FLAG)` | **3,490** (83.29%) |
-| **Cancelled Orders** | `SUM(CANCELLED_FLAG)` | **317** (7.57%) |
-| **Returned Orders** | `SUM(RETURNED_FLAG)` | **284** (6.78%) |
-| **In-Transit Orders** | `SUM(IN_TRANSIT_FLAG)` | **99** (2.36%) |
-| **Total Fulfillment Revenue** | `SUM(TOTAL_AMOUNT)` | **₹1,15,17,112.00** |
-| **On-Time Delivery %** | `SUM(ON_TIME_FLAG) / SUM(DELIVERED_FLAG) * 100` | **27.08%** |
-| **Late Delivery %** | `SUM(LATE_DELIVERY_FLAG) / SUM(DELIVERED_FLAG) * 100` | **72.92%** |
-| **Average Delivery Days** | `AVG(DELIVERY_DAYS)` | **7.72 Days** |
-| **Target Average SLA** | `AVG(SLA_DAYS)` | **4.14 Days** |
-| **Shipment Success Rate** | `SUM(DELIVERED_FLAG) / COUNT(*) * 100` | **83.29%** |
-| **Best Performing Courier** | Highest On-Time % | **Gati (50.00% On-Time)** |
-| **Worst Performing Courier** | Highest Delay Rate | **Blue Dart (81.65% Late)** |
+### A. Order KPIs
+*Business Question: What is happening to our orders?*
+- **Total Orders Processed**: `4,190`
+- **Delivered Orders**: `3,490` (83.29% fulfillment rate)
+- **Cancelled Orders**: `317` (7.57%)
+- **Returned Orders**: `284` (6.78%)
+- **In-Transit Orders**: `99` (2.36%)
+
+### B. Customer KPIs
+*Business Question: How many customers do we serve, and who places the most orders?*
+- **Distinct Customers Served**: `600`
+- **Top 10 Customers Leaderboard**: Identifies highest-volume customers (e.g., top accounts placing 10+ orders with ₹35,000+ spend) tracked via SCD Type 2 dimension linkage across demographic shifts.
+
+### C. Fulfillment KPIs & SLA Performance
+*Business Question: Are we delivering on time?*
+- **Average Delivery Days**: `7.72 Days` (Order placement to doorstep delivery)
+- **Average SLA Days**: `4.14 Days` (Target contracted timeline)
+- **On-Time Delivery %**: `27.08%`
+- **Late Delivery %**: `72.92%`
+- **Shipment Success Rate**: `83.29%` (`Delivered Orders / Total Orders`)
+
+> **How the On-Time Delivery KPI Drives Investigation:**
+> $$\text{On-Time Delivery \%} = \frac{\text{On-Time Delivered Orders}}{\text{Total Delivered Orders}} \times 100 = \frac{80}{100} \times 100 = 80.0\%$$
+> Management uses this metric to investigate the remaining late deliveries and determine whether they are concentrated around a particular courier, city, or month. The metric identifies **where to investigate**; it does not by itself prove why delays occurred.
+
+### D. Courier KPIs & Partner Reliability
+*Business Question: Which delivery partners should we investigate or reward?*
+- Orders handled across all 9 courier partners (`Delhivery`, `Blue Dart`, `DTDC`, `Ecom Express`, `XpressBees`, `Shadowfax`, `Ekart`, `India Post`, `Gati`).
+- **Best Performing Partner**: `Gati` (50.00% On-Time rate).
+- **Worst Performing Partner**: `Blue Dart` (81.65% Late delivery rate; average delivery takes 5.16 days against a 2-day express SLA).
+
+### E. Trend KPIs & Temporal Dynamics
+*Business Question: Is performance improving or deteriorating over time?*
+- **Monthly Order Trend**: Tracked month-by-month from Oct 2025 through Nov 2026.
+- **Monthly Delivery Duration**: Tracking changes in transit latency.
+- **Status-Wise Fulfillment Share**: Dynamic visual distribution of delivered vs returned vs cancelled orders.
+- **Courier-Wise Trends**: Monthly volume distribution across carrier partners.
+
+---
+
+## 5. Section 6: Real-World Business Outcomes & Problem Solving
+
+Connecting data engineering transformations to tangible business decisions:
+
+- **Scenario 1: A customer repeatedly receives late deliveries**
+  - *Evidence*: Blue Dart shows an 81.65% delay rate against their 2-day express SLA.
+  - *Business Action*: Operations investigates regional hub routing, holds corrective performance reviews, and reallocates urgent express volume to alternative partners.
+  - *Customer Benefit*: Higher probability of receiving doorstep orders on time.
+
+- **Scenario 2: Incorrect order records distort delivery reports**
+  - *Evidence*: 316 corrupt records (negative quantities, invalid calendar dates like `2026/13/40`, duplicate timestamps, orphan keys) were quarantined.
+  - *Business Action*: Operations audits the quarantine table while BI reports compute KPIs strictly on clean, validated warehouse records.
+  - *Customer Benefit*: Management decisions are based on accurate data, preventing misguided fulfillment adjustments.
+
+- **Scenario 3: Deliveries in a particular city are consistently delayed**
+  - *Evidence*: Geographic analysis reveals Patna (10.54 days) and Lucknow (8.62 days) suffer nearly double the transit latency of Delhi (6.87 days).
+  - *Business Action*: Management directs route planning and local courier hub expansion specifically in delayed northern and eastern corridors.
+  - *Customer Benefit*: Targeted regional improvements without applying generic, wasteful nationwide policies.
+
+- **Scenario 4: Management wants to reduce operational costs**
+  - *Evidence*: Comparing courier-wise SLA days, on-time success rates, and active/inactive status highlights underperforming vendor contracts.
+  - *Business Action*: Management leverages factual compliance data during contract renewal negotiations to optimize carrier allocation and rates.
+  - *Customer Benefit*: More reliable fulfillment without unnecessary increases in delivery surcharges.
 
 ---
 

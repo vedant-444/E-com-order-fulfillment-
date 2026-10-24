@@ -146,3 +146,53 @@ class KPICalculator:
             "monthly_trends": monthly_trends,
             "status_distribution": status_dist
         }
+
+    def get_city_kpis(self) -> list:
+        """Calculates geographic delivery delay and fulfillment metrics by city."""
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        query = """
+        SELECT 
+            c.CITY,
+            COUNT(f.ORDER_ID) AS total_orders,
+            SUM(f.DELIVERED_FLAG) AS delivered_orders,
+            SUM(f.LATE_DELIVERY_FLAG) AS late_orders,
+            ROUND(CAST(SUM(f.ON_TIME_FLAG) AS REAL) / NULLIF(SUM(f.DELIVERED_FLAG), 0) * 100.0, 2) AS on_time_pct,
+            ROUND(CAST(SUM(f.LATE_DELIVERY_FLAG) AS REAL) / NULLIF(SUM(f.DELIVERED_FLAG), 0) * 100.0, 2) AS delay_pct,
+            ROUND(AVG(CASE WHEN f.DELIVERED_FLAG = 1 THEN f.DELIVERY_DAYS END), 2) AS avg_delivery_days,
+            ROUND(AVG(CASE WHEN f.DELIVERED_FLAG = 1 THEN f.DELAY_DAYS END), 2) AS avg_delay_days
+        FROM FACT_ORDER_FULFILLMENT f
+        JOIN DIM_CUSTOMER c ON f.CUSTOMER_KEY = c.CUSTOMER_KEY
+        WHERE c.CITY IS NOT NULL AND c.CITY != 'UNKNOWN'
+        GROUP BY c.CITY
+        ORDER BY total_orders DESC
+        LIMIT 10;
+        """
+        cursor.execute(query)
+        cities = [dict(r) for r in cursor.fetchall()]
+        conn.close()
+        return cities
+
+    def get_courier_monthly_trends(self) -> list:
+        """Calculates courier-wise monthly trends."""
+        conn = get_db_connection()
+        cursor = conn.cursor()
+
+        query = """
+        SELECT 
+            SUBSTR(f.ORDER_DATE, 1, 7) AS year_month,
+            c.COURIER_NAME,
+            COUNT(f.ORDER_ID) AS total_orders,
+            SUM(f.DELIVERED_FLAG) AS delivered_orders,
+            ROUND(CAST(SUM(f.ON_TIME_FLAG) AS REAL) / NULLIF(SUM(f.DELIVERED_FLAG), 0) * 100.0, 2) AS on_time_pct
+        FROM FACT_ORDER_FULFILLMENT f
+        JOIN DIM_COURIER c ON f.COURIER_KEY = c.COURIER_KEY
+        WHERE f.ORDER_DATE IS NOT NULL
+        GROUP BY SUBSTR(f.ORDER_DATE, 1, 7), c.COURIER_NAME
+        ORDER BY year_month ASC, total_orders DESC;
+        """
+        cursor.execute(query)
+        courier_trends = [dict(r) for r in cursor.fetchall()]
+        conn.close()
+        return courier_trends
